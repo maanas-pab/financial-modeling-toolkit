@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "financial-modeling-toolkit"
+version = "0.1.0"
+description = "Production-quality Python financial modeling & quantitative finance toolkit: three-statement, DCF, WACC, sensitivity, scenarios, portfolio optimization, efficient frontier."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Financial Modeling Toolkit Contributors" }]
+keywords = ["finance", "valuation", "dcf", "portfolio", "wacc", "quant"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business :: Financial :: Investment",
+]
+dependencies = [
+    "pandas>=2.0,<3.0",
+    "numpy>=1.24,<2.0",
+    "scipy>=1.10",
+    "matplotlib>=3.7",
+    "openpyxl>=3.1",
+    "seaborn>=0.12",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "pytest-cov"]
+
+[project.urls]
+Repository = "https://github.com/your-org/financial-modeling-toolkit"
+Issues = "https://github.com/your-org/financial-modeling-toolkit/issues"
+
+[project.scripts]
+fmtk = "src.main:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-v"
+
+[tool.ruff]
+line-length = 100
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true

@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+*.whl
+.venv/
+venv/
+env/
+ENV/
+.env
+
+# Jupyter
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+*.cover
+
+# Outputs (generated charts & CSVs) — keep .gitkeep, ignore artefacts
+outputs/*.png
+outputs/*.pdf
+outputs/*.jpg
+outputs/*.xlsx
+outputs/*.csv
+
+# Data - keep structure but ignore large raw files if needed
+# data/raw/*  # uncomment if raw data is large
+# data/processed/*
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.idea/
+.vscode/
+*.code-workspace
+
+# mypy / ruff
+.mypy_cache/
+.ruff_cache/
