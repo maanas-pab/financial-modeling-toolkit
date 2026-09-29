@@ -1,6 +1,6 @@
 # Financial Modeling & Quantitative Finance Toolkit — Python
 
-A production-quality, fully executable Python toolkit that re-implements — in reproducible, tested, modular code — the same analyses typically built in Excel: dynamic three-statement forecasting, WACC, DCF (Gordon + exit-multiple), sensitivity & scenario analysis, and quantitative portfolio optimization (efficient frontier, Monte Carlo).
+A fully executable Python toolkit that re-implements — in reproducible, tested, modular code — the same analyses typically built in Excel: dynamic three-statement forecasting, WACC, DCF (Gordon + exit-multiple), sensitivity & scenario analysis, and quantitative portfolio optimization (efficient frontier, Monte Carlo).
 
 Built to accompany an Excel modeling repository. Excel and Python are **peers**: the same assumptions run in both and should produce the same valuation. Python can read assumptions from Excel (`openpyxl`) and write results back, but never *requires* Excel or internet access.
 
